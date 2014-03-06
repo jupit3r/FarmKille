@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>FarmKille</title>
+		<meta charset='utf-8'>
+
+		<style>
+			
+			* {
+				cursor: url(Images/pitchfork.gif), auto;
+			}
+
+			body {
+				background: url(Images/farmhouse.gif) no-repeat;
+				background-size: cover;
+				background-color: #CCCCFF;
+			}
+
+			#chicken {
+				height: 175px;
+				width: 175px;
+			}
+
+			#pig {
+				height: 200px;
+				width: 200px;
+			}
+
+			#cow {
+				height: 250px;
+				width: 250px;
+			}
+
+			#rabbit {
+				height: 175px;
+				width: 175px;
+			}
+
+			#donkey {
+				height: 300px;
+				width: 500px;
+			}
+
+			.audio {
+				visibility: hidden;
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<!--COW-->
+		<img id="cow" style='position:absolute' onClick="cowClicked()" src="Images/cow.gif">
+
+		<!--PIG-->
+		<img id="pig" style='position:absolute' onClick="pigClicked()" src="Images/pig.gif">
+
+		<!--CHICKEN-->
+		<img id="chicken" style='position:absolute' onClick="chickenClicked()" src="Images/chicken.gif">
+
+		<!--DONKEY-->
+		<img id="donkey" style='position:absolute' onClick="donkeyClicked()" src="Images/donkey.gif">
+
+		<!--RABBIT-->
+		<img id="rabbit" style='position:absolute' onClick="rabbitClicked()" src="Images/rabbit.gif">
+
+		<!--AUDIO-->
+		<div class="audio">
+			<audio controls autoplay>
+			<source src="assets/farmerRap.mp3" type="audio/mp3">
+		</div>
+
+		<!--CURSOR-->
+		<div class="pitchfork">
+			<source src="Images/pitchfork.gif">
+		</div>
+
+	</body>
+
+<script src="FarmKille.js"></script>
+
+</html>
+
+
+
+
+<!--     lvw/.     -->
